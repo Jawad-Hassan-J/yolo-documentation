@@ -1,6 +1,10 @@
 
 # yolo-documentation
 
+## Documentation
+- [Camera Documentation](docs/camera/camera.md)
+
+
 ## What is YOLO
 #### YOLO (You Only Look Once) is a state-of-the-art real-time object detection model that detects objects in images and videos in a single pass through a neural network. It is designed to be fast, accurate, and easy to use for real-world computer vision applications.
 **Source:** Ultralytics (https://docs.ultralytics.com)
@@ -13,6 +17,7 @@
 | `yolov8m.pt` | Medium      | Moderate  | High      |
 | `yolov8l.pt` | Large       | Slow      | Very High |
 | `yolov8x.pt` | Extra Large | Very Slow | Highest   |
+
 **Source:** Ultralytics (https://docs.ultralytics.com/models/yolov8/#supported-tasks-and-modes)
 
 ## Requirements
