@@ -2,7 +2,7 @@
 # yolo-documentation
 
 ## Documentation
-- [Camera Documentation](docs/camera/camera.md)
+- [Camerea](docs/camera/camera.md)
 
 
 ## What is YOLO
@@ -95,3 +95,27 @@ YOLO_MODEL_PATH=<your model path>
 ```env
 YOLO_MODEL_PATH=./yolov8n.pt 
 ```
+
+---
+
+### Block of import we will use this alot 
+```python
+from ultralytics import YOLO
+from dotenv import load_dotenv
+import os
+```
+**ultralytics:** the main library for YOLO models, YOLO is class for object detection 
+**dotenv,load_dotenv:** we use .env to crate a variables we dont want to share or to make code dynamic when we need to edit 
+**os:** we use os to interact with operating system, and in this case we use os for getenv variables
+
+### 
+```python 
+load_dotenv()
+model_path = os.getenv("YOLO_MODEL_PATH")
+model = YOLO(model_path)
+```
+
+**load_dotenv():** is a function used to find .env file in project start from root until find .env file
+**os.getenv():** function accept variable name in .env file and take the value of this variable 
+**YOLO(<modle_name>):** invoke YOLO model to use it
+
