@@ -2,7 +2,9 @@
 # yolo-documentation
 
 ## Documentation
-- [Camerea](docs/camera/camera.md)
+### Camera
+- [camera direct-detection](docs/camera/direct-detection/camera_direct_detection.md)
+- [camera detection-with-action](docs/camera/detection-with-action/camera_detection_with_action.md)
 
 
 ## What is YOLO
